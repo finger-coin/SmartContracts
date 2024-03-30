@@ -11,8 +11,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
  * @notice ERC20 token 
  * @dev Transfers enabled only from owner address
  */
-contract LikeCoin is ERC20, Ownable, ERC20Permit{
-    constructor(address _owner) ERC20("BomLike", "LIKE") Ownable(_owner) ERC20Permit("GuildXp"){}
+contract FingerCoin is ERC20, Ownable, ERC20Permit{
+    constructor(address _owner) ERC20("FingerCoin", "FINGER") Ownable(_owner) ERC20Permit("FingerCoin"){}
     
     // set decimals to 2
     function decimals() public view virtual override returns (uint8) {
