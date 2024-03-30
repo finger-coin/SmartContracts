@@ -44,6 +44,7 @@ const config: HardhatUserConfig = {
             url: "https://devnet.neonevm.org",
             accounts: [env.DEV_WALLET_PRIVATE_KEY],
             chainId: 245022926,
+            
         },
         // mainnet: {
         //   url: `https://mainnet.infura.io/v3/${env.INFURA_API_KEY}`,

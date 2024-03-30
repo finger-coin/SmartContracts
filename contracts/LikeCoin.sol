@@ -11,12 +11,12 @@ import "@openzeppelin/contracts/access/Ownable.sol";
  * @notice ERC20 token 
  * @dev Transfers enabled only from owner address
  */
-contract Clap is ERC20, Ownable, ERC20Permit{
-    constructor(address _owner) ERC20("Clap", "CLAP") Ownable(_owner) ERC20Permit("GuildXp"){}
+contract LikeCoin is ERC20, Ownable, ERC20Permit{
+    constructor(address _owner) ERC20("BomLike", "LIKE") Ownable(_owner) ERC20Permit("GuildXp"){}
     
     // set decimals to 2
     function decimals() public view virtual override returns (uint8) {
-        return 2;
+        return 18;
     }
 
     /**
@@ -24,7 +24,7 @@ contract Clap is ERC20, Ownable, ERC20Permit{
      * @param to The address of the recipient
      * @param amount Amount of tokens (with 2 decimals)
      */
-    function mint(address to, uint256 amount) external onlyOwner {
+    function mint(address to, uint256 amount) external {
         _mint(to, amount);
     }
 }
