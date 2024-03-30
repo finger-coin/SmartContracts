@@ -44,7 +44,7 @@ const config: HardhatUserConfig = {
             url: "https://devnet.neonevm.org",
             accounts: [env.DEV_WALLET_PRIVATE_KEY],
             chainId: 245022926,
-            
+
         },
         // mainnet: {
         //   url: `https://mainnet.infura.io/v3/${env.INFURA_API_KEY}`,
@@ -129,28 +129,28 @@ const config: HardhatUserConfig = {
             },
             {
               network: "neonDev",
-              chainId: 245022926,
-              urls: {
-                  apiURL: "https://devnet.neonscan.org/api",
-                  browserURL: "https://devnet.neonscan.org",
-              },
-          },
-          {
-            network: "katana",
-            chainId: 1261120,
-            urls: {
-              apiURL: "https://zkatana.blockscout.com/api",
-              browserURL: "https://zkatana.blockscout.com"
+                chainId: 245022926,
+                urls:   {
+                    apiURL: "https://devnet-api.neonscan.org/hardhat/verify",
+                    browserURL: "https://devnet.neonscan.org"
+                }
+            },
+            {
+                network: "katana",
+                chainId: 1261120,
+                urls: {
+                apiURL: "https://zkatana.blockscout.com/api",
+                browserURL: "https://zkatana.blockscout.com"
+                }
+            },
+            {
+                network: "alfajores",
+                chainId: 44787,
+                urls: {
+                    apiURL: "https://api-alfajores.celoscan.io/api",
+                    browserURL: "https://alfajores.celoscan.io/"
+                }
             }
-          },
-          {
-              network: "alfajores",
-              chainId: 44787,
-              urls: {
-                apiURL: "https://api-alfajores.celoscan.io/api",
-                browserURL: "https://alfajores.celoscan.io/"
-              }
-          }
         ],
     },
 };
