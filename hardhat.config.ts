@@ -40,11 +40,11 @@ const config: HardhatUserConfig = {
             url: `https://sepolia.infura.io/v3/${env.INFURA_API_KEY}`,
             accounts: [env.DEV_WALLET_PRIVATE_KEY],
         },
-        // neonDev: {  
-        //     url: "https://devnet.neonevm.org",
-        //     accounts: [env.DEV_WALLET_PRIVATE_KEY],
-        //     chainId: 245022926,
-        // },
+        neonDev: {  
+            url: "https://devnet.neonevm.org",
+            accounts: [env.DEV_WALLET_PRIVATE_KEY],
+            chainId: 245022926,
+        },
         // mainnet: {
         //   url: `https://mainnet.infura.io/v3/${env.INFURA_API_KEY}`,
         //   accounts: [env.TITAN_WALLET_PRIVATE_KEY]
