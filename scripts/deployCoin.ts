@@ -9,7 +9,7 @@ async function main() {
   await token.waitForDeployment();
 
   console.log(
-    `Token deployed to ${token.target}`
+    `Token deployed to ${token.target} by ${token.owner}`
   );
 }
 
